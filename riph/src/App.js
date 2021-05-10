@@ -1,5 +1,6 @@
 import './App.css';
 import Ecosystem from './components/Ecosystem';
+import ICO from './components/ICO';
 import RIPH from './components/RIPH';
 import WhatIsRIPH from './components/WhatIsRIPH';
 
@@ -9,6 +10,7 @@ function App() {
       <RIPH/>
       <WhatIsRIPH/>
       <Ecosystem/>
+      <ICO/>
     </div>
   );
 }
