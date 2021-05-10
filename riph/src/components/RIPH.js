@@ -47,6 +47,12 @@ export default function RIPH() {
                         1% of the every transaction is automatically donated
                         towards a gorilla conservation fund.
                     </Text>
+                    <Amount>
+                        $340,000
+                    </Amount>
+                    <Raised>Raised</Raised>
+                    <Raised>Phase 1</Raised>
+                    <Button>Get RIPH</Button>
                 </Content>
             </Circle>
         </Container>
@@ -54,11 +60,11 @@ export default function RIPH() {
 }
 
 const Container = styled.div`
-    min-height: 100vh;
+    min-height: 45vw;
     position: relative;
 
     &:before{
-        min-height: 70vh;
+        min-height: 45vw;
         background: url("/images/Galaxy.jpg") center center / cover;
         content: "";
         position: absolute;
@@ -89,7 +95,7 @@ const Links = styled.div`
     a{
         text-transform: uppercase;
         letter-spacing: 1.4px;
-        padding: 0 10px;
+        padding: 0 1vw;
         cursor: pointer;
         font-size: 1vw;
     }
@@ -121,13 +127,38 @@ const Content = styled.div`
     width: 25vw;
 `
 const LogoII = styled.img`
-    height:12vw;
-    width: 15vw;
+    height:8vw;
+    width: 12vw;
     padding-top:5vw;
-    padding-left: 5vw;
+    padding-left: 6vw;
 `
 const Text = styled.div`
     font-size: 1vw;
     letter-spacing: 1.4px;
     padding-bottom: 2vw;
+`
+const Amount = styled.div`
+    font-size: 2.5vw;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`
+const Raised = styled(Amount)`
+    font-size: 1vw;
+    text-transform: uppercase;
+    padding-top: 1vw;
+`
+const Button = styled.button`
+    font-size: 1vw;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width:9vw;
+    background-color: rgb(153,50,204);
+    color: white;
+    font-weight: bold;
+    border-radius: 10%;
+    padding: 0.9vw;
+    margin-top: 1vw;
+    margin-left: 7.5vw;
 `
