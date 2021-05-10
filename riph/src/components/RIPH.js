@@ -36,35 +36,37 @@ export default function RIPH() {
                     </a>
                 </Links>
             </Header>
-            <Circle>
-                <Content>
-                    <LogoII src="/images/RIPH Text Logo.png"/>
-                    <Text>
-                        RIPH is a digitall currency developed in honor of
-                        the internet's most beloved gorilla, Harambe.
-                    </Text>
-                    <Text>
-                        1% of the every transaction is automatically donated
-                        towards a gorilla conservation fund.
-                    </Text>
-                    <Amount>
-                        $340,000
-                    </Amount>
-                    <Raised>Raised</Raised>
-                    <Raised>Phase 1</Raised>
-                    <Button>Get RIPH</Button>
-                </Content>
-            </Circle>
+            <MonkeyandCircle>
+                <Circle>
+                    <Content>
+                        <LogoII src="/images/RIPH Text Logo.png"/>
+                        <Text>
+                            RIPH is a digitall currency developed in honor of
+                            the internet's most beloved gorilla, Harambe.
+                        </Text>
+                        <Text>
+                            1% of the every transaction is automatically donated
+                            towards a gorilla conservation fund.
+                        </Text>
+                        <Amount>
+                            $340,000
+                        </Amount>
+                        <Raised>Raised</Raised>
+                        <Raised>Phase 1</Raised>
+                        <Button>Get RIPH</Button>
+                    </Content>
+                </Circle>
+                <Monkey src="/images/riphofficial.png"/>
+            </MonkeyandCircle>
         </Container>
     )
 }
 
 const Container = styled.div`
-    min-height: 45vw;
+    min-height: 42vw;
     position: relative;
-
     &:before{
-        min-height: 45vw;
+        min-height: 42vw;
         background: url("/images/Galaxy.jpg") center center / cover;
         content: "";
         position: absolute;
@@ -100,15 +102,19 @@ const Links = styled.div`
         font-size: 1vw;
     }
 `
+const MonkeyandCircle = styled.div`
+    display: flex;
+`
 const Circle = styled.div`
     height:45vw;
     width: 40vw;
-    border-radius: 80%;
+    /* border-radius: 80%; */
     position: relative;
     display: flex;
     justify-content: center;
     margin-left: 15vw;
     /* background-color: pink; */
+    z-index: 0;
     &:before{
         height: 100%;
         width:100%;
@@ -161,4 +167,13 @@ const Button = styled.button`
     padding: 0.9vw;
     margin-top: 1vw;
     margin-left: 7.5vw;
+`
+const Monkey = styled.img`
+    height: 35vw;
+    margin-bottom:0vw;
+    position: absolute;
+    z-index: 1;
+    margin-left: 43vw;
+    margin-top: 8vw;
+
 `
