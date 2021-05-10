@@ -37,7 +37,17 @@ export default function RIPH() {
                 </Links>
             </Header>
             <Circle>
-
+                <Content>
+                    <LogoII src="/images/RIPH Text Logo.png"/>
+                    <Text>
+                        RIPH is a digitall currency developed in honor of
+                        the internet's most beloved gorilla, Harambe.
+                    </Text>
+                    <Text>
+                        1% of the every transaction is automatically donated
+                        towards a gorilla conservation fund.
+                    </Text>
+                </Content>
             </Circle>
         </Container>
     )
@@ -45,9 +55,7 @@ export default function RIPH() {
 
 const Container = styled.div`
     min-height: 100vh;
-    /* padding: 0 calc(3.5vw + 5px); */
     position: relative;
-    /* overflow-x: hidden; */
 
     &:before{
         min-height: 70vh;
@@ -65,6 +73,8 @@ const Header = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    height: 18vh;
 `
 
 const Logo = styled.img`
@@ -81,8 +91,43 @@ const Links = styled.div`
         letter-spacing: 1.4px;
         padding: 0 10px;
         cursor: pointer;
+        font-size: 1vw;
     }
 `
 const Circle = styled.div`
-    
+    height:45vw;
+    width: 40vw;
+    border-radius: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 15vw;
+    /* background-color: pink; */
+    &:before{
+        height: 100%;
+        width:100%;
+        background: url("/images/Blank Gold Circle.png") center center / cover;
+        background-size: 100% 100%;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+`
+const Content = styled.div`
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25vw;
+`
+const LogoII = styled.img`
+    height:12vw;
+    width: 15vw;
+    padding-top:5vw;
+    padding-left: 5vw;
+`
+const Text = styled.div`
+    font-size: 1vw;
+    letter-spacing: 1.4px;
+    padding-bottom: 2vw;
 `
