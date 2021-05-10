@@ -57,6 +57,9 @@ export default function RIPH() {
                     </Content>
                 </Circle>
                 <Monkey src="/images/riphofficial.png"/>
+                <SmallCoin1 src="/images/RIPH Coin.png"/>
+                <SmallCoin2 src="/images/RIPH Coin.png"/>
+                <SmallCoin3 src="/images/RIPH Coin.png"/>
             </MonkeyandCircle>
         </Container>
     )
@@ -175,5 +178,28 @@ const Monkey = styled.img`
     z-index: 1;
     margin-left: 43vw;
     margin-top: 8vw;
-
+`
+const SmallCoin1 = styled.img`
+    height: 15vw;
+    position: absolute;
+    z-index: 4;
+    margin-top:30vw;
+    margin-left:14vw;
+    /* margin-right: 10vw; */
+`
+const SmallCoin2 = styled.img`
+    height: 15vw;
+    position: absolute;
+    z-index: 3;
+    margin-top:28vw;
+    margin-left:10vw;
+    /* margin-right: 10vw; */
+`
+const SmallCoin3 = styled.img`
+    height: 15vw;
+    position: absolute;
+    z-index: 2;
+    margin-top:26vw;
+    margin-left:8vw;
+    /* margin-right: 10vw; */
 `
