@@ -29,7 +29,6 @@ export default function WhatIsRIPH() {
 
 const Container = styled.div`
     width:100%;
-    position: absolute;
     display: flex;
     flex-direction: row;
     height: 33vw;
