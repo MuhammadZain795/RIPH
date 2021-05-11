@@ -13,6 +13,7 @@ export default function ICO() {
                         <h3>90%</h3>
                         <h2>Discount</h2>
                         <h1>WEEK 1</h1>
+                        <img src="/images/RIPH Coin.png"/>
                     </Circle1>
                 </Block1>
                 <Block2>
@@ -22,6 +23,7 @@ export default function ICO() {
                         <h3>75%</h3>
                         <h2>Discount</h2>
                         <h1>WEEK 2</h1>
+                        <img src="/images/RIPH Coin.png"/>
                     </Circle2>
                 </Block2>
                 <Block3>
@@ -31,6 +33,7 @@ export default function ICO() {
                         <h3>50%</h3>
                         <h2>Discount</h2>
                         <h1>WEEK 3</h1>
+                        <img src="/images/RIPH Coin.png"/>
                     </Circle3>
                 </Block3>
             </Blocks>
@@ -65,18 +68,44 @@ const Block1 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    img{
+        height: 3vw;
+        width: 3vw;
+        position: absolute;
+        z-index: 1;
+        padding-top: 9vw;
+        padding-left: 9vw;
+    }
 `
 const Block2 = styled.div`
     width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    img{
+        height: 3vw;
+        width: 3vw;
+        position: absolute;
+        z-index: 1;
+        padding-top: 9vw;
+        padding-left: 9vw;
+    }
+
 `
 const Block3 = styled.div`
     width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    img{
+        height: 3vw;
+        width: 3vw;
+        position: absolute;
+        z-index: 1;
+        padding-top: 9vw;
+        padding-left: 9vw;
+    }
+
 `
 const Circle1 = styled.div`
     background-color: #2c3968;

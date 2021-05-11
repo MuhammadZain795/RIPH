@@ -21,7 +21,7 @@ export default function WhatIsRIPH() {
                 </p>
             </Content>
             <Pic>
-                <img src="/images/RIPH Text Logo.png"/>
+                <img src="/images/Rocket Ship.png"/>
             </Pic>
         </Container>
     )
@@ -55,6 +55,6 @@ const Pic = styled.div`
     justify-content: center;
     img{
         height: 20vw;
-        width: 30vw;
+        width: 25vw;
     }
 `
