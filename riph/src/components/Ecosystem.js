@@ -56,7 +56,7 @@ const Container = styled.div`
 `
 const MonkeySide = styled.div`
     width: 50%;
-    color: rgb(207,181,59);
+    color: #D3D3D3;
 `
 const TextSide = styled.div`
     color: white;
