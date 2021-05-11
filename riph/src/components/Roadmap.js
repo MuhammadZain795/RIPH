@@ -76,8 +76,7 @@ export default function Roadmap() {
                         </p>
                     </Text5>
                 </FirstLineOfText>
-
-
+                <hr/>
                 <SecLineOfText>
                     <Text6>
                         <p>Launch of social media
@@ -176,6 +175,11 @@ const InsideDiv = styled.div`
         margin-top: 2vw;
         margin-left: 30vw;
     }
+    hr{
+        color: green;
+        width: 80%;
+        padding-top:0vw;
+    }
 `
 const TextLogo = styled.div`
     img{
@@ -230,7 +234,7 @@ const SecLineOfText = styled.div`
     display: flex;
     flex-direction: row;
     color: white;
-    padding-top: 4vw;
+    padding-top: 2vw;
     padding-left: 12vw;
     p{
         font-size: 0.6vw;
